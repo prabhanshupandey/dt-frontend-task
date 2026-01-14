@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DT Frontend Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>DeepThought</h1>
+    <button class="btn">Login</button>
+  </header>
+
+  <section class="hero">
+    <h2>Frontend Intern Challenge</h2>
+    <p>Build clean UI using HTML & CSS</p>
+  </section>
+
+  <!-- Dynamic content will be injected here -->
+   <div class="filters">
+  <button data-status="All">All</button>
+  <button data-status="Completed">Completed</button>
+  <button data-status="In Progress">In Progress</button>
+  <button data-status="Pending">Pending</button>
+</div>
+
+  <div id="task-container"></div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+
+  <!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+
+    <button id="login-submit" class="btn login-btn">Login</button>
+
+    <p id="login-msg"></p>
+  </div>
+</div>
+
+</body>
+</html>
